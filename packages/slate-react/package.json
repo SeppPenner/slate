@@ -26,7 +26,8 @@
     "slate-dev-warning": "^0.0.1",
     "slate-hotkeys": "^0.2.3",
     "slate-plain-serializer": "^0.6.2",
-    "slate-prop-types": "^0.4.61"
+    "slate-prop-types": "^0.4.61",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "immutable": ">=3.8.1",
@@ -42,7 +43,9 @@
     "slate-simulator": "^0.4.61"
   },
   "scripts": {
-    "clean": "rm -rf ./dist ./lib ./node_modules"
+    "clean": "rm -rf ./dist ./lib ./node_modules",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "umdGlobals": {
     "immutable": "Immutable",
@@ -71,5 +74,6 @@
     "text",
     "wysiwyg",
     "wysiwym"
-  ]
+  ],
+  "snyk": true
 }
