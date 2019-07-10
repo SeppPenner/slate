@@ -19,7 +19,8 @@
     "is-plain-object": "^2.0.4",
     "lodash": "^4.17.4",
     "slate-dev-warning": "^0.0.1",
-    "type-of": "^2.0.1"
+    "type-of": "^2.0.1",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "immutable": ">=3.8.1",
@@ -30,7 +31,9 @@
     "slate-hyperscript": "^0.10.2"
   },
   "scripts": {
-    "clean": "rm -rf ./dist ./lib ./node_modules"
+    "clean": "rm -rf ./dist ./lib ./node_modules",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "umdGlobals": {
     "immutable": "Immutable"
@@ -56,5 +59,6 @@
     "text",
     "wysiwyg",
     "wysiwym"
-  ]
+  ],
+  "snyk": true
 }
