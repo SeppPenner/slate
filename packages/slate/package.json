@@ -20,7 +20,7 @@
     "lodash": "^4.17.4",
     "slate-dev-warning": "^0.0.1",
     "type-of": "^2.0.1",
-    "snyk": "^1.189.0"
+    "snyk": "^1.192.4"
   },
   "peerDependencies": {
     "immutable": ">=3.8.1",
